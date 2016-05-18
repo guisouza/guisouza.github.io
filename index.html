@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      body{
+          background: black;
+      }
+
+      .triangles{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -75px;
+        margin-top: -75px;
+      }
+      .triangle{
+        background: url(./triangle.png) no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        transform: rotate(0deg);
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      .triangle2{
+        animation-name: spin2;
+        animation-duration: 5000ms;
+
+      }
+
+      .triangle3{
+        animation-name: spin3;
+        animation-duration: 6000ms;
+
+      }
+
+      .triangle4{
+        animation-name: spin4;
+        animation-duration: 7000ms;
+
+      }
+
+      @keyframes spin {
+          from {transform:rotate(0deg);}
+          to {transform:rotate(360deg);}
+      }
+
+      @keyframes spin2 {
+          from {transform:rotate(90deg);}
+          to {transform:rotate(450deg);}
+      }
+
+      @keyframes spin3 {
+          from {transform:rotate(180deg);}
+          to {transform:rotate(540deg);}
+      }
+
+      @keyframes spin4 {
+          from {transform:rotate(270deg);}
+          to {transform:rotate(630deg);}
+      }
+
+      @keyframes spin5 {
+          from {transform:rotate(360deg);}
+          to {transform:rotate(0deg);}
+      }
+
+
+      .plusultra{
+        background: url(./vadeplusultra.png) no-repeat center center;
+        background-size: contain;
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -115px;
+        margin-top: -115px;
+        animation-name: spin5;
+        animation-duration: 10000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+      }
+
+      .since{
+        background: url(./since-1992.png) no-repeat center center;
+        background-size:contain;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -140px;
+        margin-top: -140px;
+        animation-name: spin;
+        animation-duration: 20000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      .bg{
+        background: url(./fundo.png) no-repeat center center;
+        background-size: contain;
+        width: 530px;
+        height: 530px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -265px;
+        margin-top: -265px;
+        animation-name: spin5;
+        animation-duration: 30000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="since">
+        <div class="plusultra">
+          <div class="triangles">
+            <div class="triangle"></div>
+            <div class="triangle triangle2"></div>
+            <div class="triangle triangle3"></div>
+            <div class="triangle triangle4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
